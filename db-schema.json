@@ -14,6 +14,7 @@
           "followersCount": { "type": "number", "description": "Total number of followers." },
           "followingCount": { "type": "number", "description": "Total number of users they follow." },
           "followingIds": { "type": "array", "description": "An array of user IDs that this user follows." },
+          "fcmTokens": { "type": "array", "description": "Array of Firebase Cloud Messaging tokens for push notifications." },
           "readingList": { "type": "array", "description": "Array of story objects the user has saved." },
           "readChapters": { "type": "array", "description": "Array of chapter IDs the user has read." },
           "shelves": { "type": "array", "description": "Array of custom bookshelves." },
@@ -22,7 +23,9 @@
           "achievements": { "type": "array", "description": "Array of achievement objects the user has unlocked." },
           "createdAt": { "type": "timestamp", "description": "When the user account was created." },
           "updatedAt": { "type": "timestamp", "description": "When the user profile was last updated." },
-          "isAnonymous": { "type": "boolean", "description": "Flag for guest users." }
+          "isAnonymous": { "type": "boolean", "description": "Flag for guest users." },
+          "isBanned": { "type": "boolean", "description": "Flag for banned users." },
+          "isVerified": { "type": "boolean", "description": "Flag for verified users." }
         }
       },
       "stories": {
